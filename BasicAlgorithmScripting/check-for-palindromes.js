@@ -9,4 +9,5 @@ function palindrome(str) {
     }
 }
 
-palindrome("eye");
+var myvar = palindrome("eye");
+console.log(myvar);
