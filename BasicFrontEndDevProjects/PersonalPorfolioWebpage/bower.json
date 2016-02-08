@@ -1,0 +1,27 @@
+{
+  "name": "PersonalPorfolioWebpage",
+  "homepage": "https://github.com/rrenwick/myFreeCodeCamp",
+  "authors": [
+    "Rob <robjrenwick@gmail.com>"
+  ],
+  "description": "Personal portfolio web page for FCC",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "bootstrap",
+    "html",
+    "css"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
