@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <!-- Basic Page Needs
+  ––––––––––––––––––––– -->
+  <meta charset="utf-8">
   <title>Personal Portfolio</title>
+  <meta name="description" content="This is a personal portfolio web page built for a Free Code Camp project, using Bootstrap.">
+  <meta name="author" content="Rob Renwick">
+
+  <!-- Mobile Specific Meta
+  ––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––– -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./src/css/main.css">
+
+  <!-- Favicon
+  –––––––––––– -->
+
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -29,14 +48,19 @@
         </div>
       </nav>
 
-      <div class="container">
+      <section id="home-hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Web Developer</h1>
+              <h2>Specialising in bringing your designs to life with awesome code!</h2>
+            </div>
+          </div>
+        </div> <!-- /.container -->
 
-        <div class="starter-template">
-          <h1>Web Developer</h1>
-          <p class="lead">Specialising in bringing your designs to life with awesome code!</p>
-        </div>
+      </section><!-- /#home-hero -->
 
-      </div><!-- /.container -->
+
   <script src="./bower_components/jquery/dist/jquery.min.js"></script>
 
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

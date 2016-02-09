@@ -1,13 +1,11 @@
 /*! Start of Custom CSS ****************************
-
-la la la
-
 **************/
 body {
   padding-top: 50px;
+  font-family: Raleway, sans-serif;
 }
 
-.starter-template {
+#home-hero {
   padding: 40px 15px;
   text-align: center;
 }
