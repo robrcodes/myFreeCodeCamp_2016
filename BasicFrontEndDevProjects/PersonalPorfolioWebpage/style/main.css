@@ -7,7 +7,7 @@ body {
 
 #home-hero {
   padding: 40px 15px;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
   text-align: center;
   color: #ffffff;
   background: url("../images/codescreen.jpeg") no-repeat center center fixed;
