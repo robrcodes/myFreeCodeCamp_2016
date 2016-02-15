@@ -5,7 +5,7 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-#home-hero {
+#home {
   padding: 40px 15px;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -14,8 +14,12 @@ body {
   background-size: cover;
 }
 
+#home h1 {
+  margin-top: 90px;
+}
+
 .content-area {
-  min-height: 100vh;
+  min-height: 70vh;
   padding-top: 70px;
   padding-bottom: 20px;
 }
