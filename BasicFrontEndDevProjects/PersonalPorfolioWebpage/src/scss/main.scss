@@ -10,6 +10,17 @@ $font-main: Raleway,sans-serif;
 
 // Sass Mixin definitions:
 
+@mixin sectionStyle($bgurl,$bgheight){
+  padding: 40px 15px;
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  text-align: center;
+  color: #ffffff;
+  // '../images/codescreen.jpeg'
+  background: url($bgurl) no-repeat center center fixed;
+  background-size: cover;
+  min-height: $bgheight;  //100vh
+  padding-top: 70px; padding-bottom: 20px;
+}
 
 
 /*! Start of Custom CSS ****************************
@@ -19,20 +30,23 @@ body {
   padding-top: 50px;
   font-family: $font-main;
 }
+
 #home {
-    padding: 40px 15px;
-    text-shadow: 3px 3px 0 rgba(0,0,0,0.7);
-    text-align: center;
-    color: #ffffff;
-    background: url('../images/codescreen.jpeg') no-repeat center center fixed;
-    background-size: cover;
+    @include sectionStyle('../images/codescreen.jpeg',100vh);
 }
 
 #home h1 {
   margin-top: 90px;
 }
 
-.content-area {
-  min-height: 70vh;
-  padding-top: 70px; padding-bottom: 20px;
+#about {
+    @include sectionStyle('../images/dodgecoronet.jpeg',70vh);
+}
+
+#portfolio {
+    @include sectionStyle('../images/hillcross.jpeg',70vh);
+}
+
+#contact {
+    @include sectionStyle('../images/bridgefog.jpeg',70vh);
 }

@@ -7,18 +7,51 @@ body {
 
 #home {
   padding: 40px 15px;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #ffffff;
   background: url("../images/codescreen.jpeg") no-repeat center center fixed;
   background-size: cover;
+  min-height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 20px;
 }
 
 #home h1 {
   margin-top: 90px;
 }
 
-.content-area {
+#about {
+  padding: 40px 15px;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #ffffff;
+  background: url("../images/dodgecoronet.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 70vh;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+#portfolio {
+  padding: 40px 15px;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #ffffff;
+  background: url("../images/hillcross.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 70vh;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+#contact {
+  padding: 40px 15px;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #ffffff;
+  background: url("../images/bridgefog.jpeg") no-repeat center center fixed;
+  background-size: cover;
   min-height: 70vh;
   padding-top: 70px;
   padding-bottom: 20px;
