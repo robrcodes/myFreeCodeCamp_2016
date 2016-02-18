@@ -12,9 +12,9 @@ p {
 
 #home {
   padding: 40px 15px;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 10px rgba(60, 60, 60, 0.7);
   text-align: center;
-  color: #ffffff;
+  color: #f6f6f6;
   background: url("../images/codescreen1400.jpg") no-repeat center center fixed;
   background-size: cover;
   min-height: 80vh;
@@ -39,19 +39,10 @@ p {
 
 #about {
   padding: 40px 15px;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 10px rgba(246, 246, 246, 0.7);
   text-align: center;
-  color: #ffffff;
-  background: url("../images/dodgecoronet1400.jpg") no-repeat center center fixed;
-  background-size: cover;
-  min-height: 70vh;
-  padding-top: 70px;
-  padding-bottom: 20px;
-  padding: 40px 15px;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
-  text-align: center;
-  color: #ffffff;
-  background: url("") no-repeat center center fixed;
+  color: #3c3c3c;
+  background: url("../images/dodgecoronet1400w.jpg") no-repeat center center fixed;
   background-size: cover;
   min-height: 70vh;
   padding-top: 70px;
@@ -62,7 +53,7 @@ p {
   padding: 40px 15px;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
-  color: #ffffff;
+  color: #f6f6f6;
   background: url("../images/hillcross1400.jpg") no-repeat center center fixed;
   background-size: cover;
   min-height: 70vh;
@@ -74,7 +65,7 @@ p {
   padding: 40px 15px;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
-  color: #ffffff;
+  color: #f6f6f6;
   background: url("../images/bridgefog1400.jpg") no-repeat center center fixed;
   background-size: cover;
   min-height: 70vh;
@@ -88,7 +79,8 @@ p {
 
 .social-buttons a {
   margin: 1.25em 1.25em;
-  background-color: #b0e039;
+  background-color: #195b90;
+  color: #f6f6f6;
 }
 
 .social-buttons span {
