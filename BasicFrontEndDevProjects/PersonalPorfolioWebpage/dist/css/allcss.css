@@ -12,33 +12,46 @@ p {
 
 #home {
   padding: 40px 15px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
   color: #ffffff;
   background: url("../images/codescreen1400.jpg") no-repeat center center fixed;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 70px;
   padding-bottom: 20px;
 }
 
 #home h1 {
   margin-top: 90px;
-  font-size: 5em;
+  font-size: 6em;
   font-weight: 800;
   color: #f6f6f6;
 }
 
-#home h2 {
-  color: #b0e039;
+.tagline {
+  margin-top: 6em;
+}
+
+.tagline h2 {
+  color: #f6f6f6;
 }
 
 #about {
   padding: 40px 15px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
   color: #ffffff;
   background: url("../images/dodgecoronet1400.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 70vh;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding: 40px 15px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #ffffff;
+  background: url("") no-repeat center center fixed;
   background-size: cover;
   min-height: 70vh;
   padding-top: 70px;
@@ -47,7 +60,7 @@ p {
 
 #portfolio {
   padding: 40px 15px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
   color: #ffffff;
   background: url("../images/hillcross1400.jpg") no-repeat center center fixed;
@@ -59,7 +72,7 @@ p {
 
 #contact {
   padding: 40px 15px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
   color: #ffffff;
   background: url("../images/bridgefog1400.jpg") no-repeat center center fixed;
@@ -67,4 +80,17 @@ p {
   min-height: 70vh;
   padding-top: 70px;
   padding-bottom: 20px;
+}
+
+.social-buttons {
+  display: inline-block;
+}
+
+.social-buttons a {
+  margin: 1.25em 1.25em;
+  background-color: #b0e039;
+}
+
+.social-buttons span {
+  padding-left: 10px;
 }
