@@ -4,19 +4,21 @@ $nav-bg: #3c3c3c;
 $nav-text: #ffffff;
 $main-bg: #ffffff;
 $main-text: #3c3c3c;
-$alt-text: #ffffff;
+$alt-text: #f6f6f6;
 $alt-bg: #3c3c3c;
+$title: #91adff;
+$impact: #b0e039;
 $font-main: Raleway,sans-serif;
 
 // Sass Mixin definitions:
 
 @mixin sectionStyle($bgurl,$bgheight){
   padding: 40px 15px;
-  text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
   text-align: center;
   color: #ffffff;
-  // '../images/codescreen.jpeg'
   background: url($bgurl) no-repeat center center fixed;
+  // '../images/codescreen1400.jpeg'
   background-size: cover;
   min-height: $bgheight;  //100vh
   padding-top: 70px; padding-bottom: 20px;
@@ -29,24 +31,36 @@ $font-main: Raleway,sans-serif;
 body {
   padding-top: 50px;
   font-family: $font-main;
+  color: $alt-text;
+}
+
+p {
+  color: $alt-text;
 }
 
 #home {
-    @include sectionStyle('../images/codescreen.jpeg',100vh);
+    @include sectionStyle('../images/codescreen1400.jpg',100vh);
 }
 
 #home h1 {
   margin-top: 90px;
+  font-size: 5em;
+  font-weight: 800;
+  color: $alt-text;
+}
+
+#home h2 {
+  color: $impact;
 }
 
 #about {
-    @include sectionStyle('../images/dodgecoronet.jpeg',70vh);
+    @include sectionStyle('../images/dodgecoronet1400.jpg',70vh);
 }
 
 #portfolio {
-    @include sectionStyle('../images/hillcross.jpeg',70vh);
+    @include sectionStyle('../images/hillcross1400.jpg',70vh);
 }
 
 #contact {
-    @include sectionStyle('../images/bridgefog.jpeg',70vh);
+    @include sectionStyle('../images/bridgefog1400.jpg',70vh);
 }

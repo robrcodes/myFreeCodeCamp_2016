@@ -4,9 +4,11 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
+var uglifycss = require('gulp-uglifycss');
 var notify = require('gulp-notify');
 var autoprefixer = require('gulp-autoprefixer');
 var pixrem = require('gulp-pixrem');
+var picshrink = require('gulp-imagemin');
 
 var sassOptions = {
   errLogToConsole: true,
@@ -20,8 +22,12 @@ var autoprefixerOptions = {
 
 // object containing file paths
 var paths = {
-  css:['src/css/main.css']
+  css:['./src/css/main.css']
+  ,cssdist:['./dist/css/']
+  ,cssin:['./dist/css/allcss.css']
+  ,cssminout:['./dist/css/*.min.css']
   ,sass:['./src/scss/main.scss']
+  ,sasspartials:['./src/scss/partials/*.scss']
 };
 
 // default task
@@ -35,6 +41,15 @@ gulp.task('allcss', function() {
   .pipe(concat('allcss.css'))
   .pipe(pixrem())
   .pipe(gulp.dest('./dist/css/'));
+});
+
+gulp.task('mincss', function() {
+  return gulp.src(paths.css)
+    .pipe(concat('allcss.min.css'))
+    .pipe(uglifycss({
+      "max-line-len": 80
+    }))
+    .pipe(gulp.dest('./dist/css/'));
 });
 
 // Static Server + watching scss/html files
@@ -64,4 +79,11 @@ return "Problem file : " + error.message;
       .pipe(sourcemaps.write('./maps'))
       .pipe(gulp.dest('./src/css/'))
       .pipe(browserSync.stream());
+});
+
+//optimise images
+gulp.task('image-opt', function() {
+  return gulp.src('./src/images/**/*')
+    .pipe(picshrink())
+    .pipe(gulp.dest('./dist/images/'));
 });
