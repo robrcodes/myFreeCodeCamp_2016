@@ -1,12 +1,13 @@
 /*! Start of Custom CSS ****************************
 **************/
+html {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
 body {
   padding-top: 50px;
   font-family: Raleway, sans-serif;
-  color: #f6f6f6;
-}
-
-p {
   color: #f6f6f6;
 }
 
@@ -47,6 +48,11 @@ p {
   min-height: 70vh;
   padding-top: 70px;
   padding-bottom: 20px;
+}
+
+#about p {
+  color: #3c3c3c;
+  font-size: 1.6rem;
 }
 
 #portfolio {

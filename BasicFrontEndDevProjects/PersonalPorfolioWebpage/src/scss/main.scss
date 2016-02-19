@@ -29,15 +29,18 @@ $font-main: Raleway,sans-serif;
 /*! Start of Custom CSS ****************************
 **************/
 
+html {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
 body {
   padding-top: 50px;
   font-family: $font-main;
   color: $alt-text;
 }
 
-p {
-  color: $alt-text;
-}
+
 
 #home {
     @include sectionStyle('../images/codescreen1400.jpg',80vh,$alt-text,rgba($alt-bg,0.7));
@@ -60,6 +63,10 @@ p {
 #about {
     @include sectionStyle('../images/dodgecoronet1400w.jpg',70vh,$main-text,rgba($main-bg,0.7));
     //@include sectionStyle('',70vh);
+    p {
+      color: $main-text;
+      font-size: 1.6rem;
+    }
 }
 
 #portfolio {
