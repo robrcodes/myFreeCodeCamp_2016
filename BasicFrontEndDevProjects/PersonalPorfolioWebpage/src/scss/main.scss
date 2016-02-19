@@ -61,11 +61,15 @@ body {
 }
 
 #about {
-    @include sectionStyle('../images/dodgecoronet1400w.jpg',70vh,$main-text,rgba($main-bg,0.7));
+    @include sectionStyle('../images/dodgecoronet1400w.jpg',60vh,$main-text,rgba($main-bg,0.7));
     //@include sectionStyle('',70vh);
+    h1 {
+      text-align: left;
+    }
     p {
       color: $main-text;
       font-size: 1.6rem;
+      text-align: left;
     }
 }
 

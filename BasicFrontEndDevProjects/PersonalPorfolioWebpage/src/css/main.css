@@ -45,14 +45,19 @@ body {
   color: #3c3c3c;
   background: url("../images/dodgecoronet1400w.jpg") no-repeat center center fixed;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 60vh;
   padding-top: 70px;
   padding-bottom: 20px;
+}
+
+#about h1 {
+  text-align: left;
 }
 
 #about p {
   color: #3c3c3c;
   font-size: 1.6rem;
+  text-align: left;
 }
 
 #portfolio {
