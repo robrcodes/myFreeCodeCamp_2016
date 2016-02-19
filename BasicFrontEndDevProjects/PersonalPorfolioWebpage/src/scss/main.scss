@@ -67,7 +67,7 @@ body {
       text-align: left;
     }
     p {
-      color: $main-text;
+      // color: $main-text;
       font-size: 1.6rem;
       text-align: left;
     }
@@ -75,6 +75,14 @@ body {
 
 #portfolio {
     @include sectionStyle('../images/hillcross1400.jpg',70vh,$alt-text,rgba(0,0,0,0.7));
+    h1 {
+      text-align: left;
+    }
+    p {
+      // color: $main-text;
+      font-size: 1.4rem;
+      text-align: left;
+    }
 }
 
 #contact {
