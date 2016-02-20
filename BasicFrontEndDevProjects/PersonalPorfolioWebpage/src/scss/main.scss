@@ -85,6 +85,10 @@ body {
     }
 }
 
+.projects {
+  margin-bottom: 1.5rem;
+}
+
 #contact {
     @include sectionStyle('../images/bridgefog1400.jpg',70vh,$alt-text,rgba(0,0,0,0.7));
 }
