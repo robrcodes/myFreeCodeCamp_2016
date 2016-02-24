@@ -40,7 +40,7 @@ body {
   color: $alt-text;
 }
 
-
+/* Home Section ***********/
 
 #home {
     @include sectionStyle('../images/codescreen1400.jpg',80vh,$alt-text,rgba($alt-bg,0.7));
@@ -48,9 +48,16 @@ body {
 
 #home h1 {
   margin-top: 90px;
-  font-size: 6em;
+  font-size: 4rem;
   font-weight: 800;
   color: $alt-text;
+}
+
+/* Increase H1 Title on larger screens */
+@media (min-width: 758px) {
+  #home h1 {
+    font-size: 6rem;
+  }
 }
 
 .tagline {
@@ -58,39 +65,6 @@ body {
   h2 {
     color: $alt-text;
   }
-}
-
-#about {
-    @include sectionStyle('../images/dodgecoronet1400w.jpg',60vh,$main-text,rgba($main-bg,0.7));
-    //@include sectionStyle('',70vh);
-    h1 {
-      text-align: left;
-    }
-    p {
-      // color: $main-text;
-      font-size: 1.6rem;
-      text-align: left;
-    }
-}
-
-#portfolio {
-    @include sectionStyle('../images/cycleforest1400.jpg',70vh,$alt-text,rgba(0,0,0,0.7));
-    h1 {
-      text-align: left;
-    }
-    p {
-      // color: $main-text;
-      font-size: 1.4rem;
-      text-align: left;
-    }
-}
-
-.projects {
-  margin-bottom: 1.5rem;
-}
-
-#contact {
-    @include sectionStyle('../images/bridgefog1400.jpg',70vh,$alt-text,rgba(0,0,0,0.7));
 }
 
 .social-buttons {
@@ -105,4 +79,59 @@ body {
 
 .social-buttons span {
   padding-left: 10px;
+}
+
+/* About Section ***********/
+
+#about {
+    @include sectionStyle('../images/dodgecoronet1400w.jpg',60vh,$main-text,rgba($main-bg,0.7));
+    //@include sectionStyle('',70vh);
+    img {
+      max-width: 35%;
+      margin: 0.5rem;
+    }
+    h1 {
+      text-align: left;
+    }
+    p {
+      // color: $main-text;
+      font-size: 1.6rem;
+      text-align: left;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 758px) {
+  #about img {
+    max-width: 20%;
+    margin: 1rem;
+  }
+}
+
+/* Portfolio Section ***********/
+
+#portfolio {
+    @include sectionStyle('../images/cycleforest1400.jpg',70vh,$alt-text,rgba(0,0,0,0.7));
+    h1 {
+      text-align: left;
+    }
+    p {
+      // color: $main-text;
+      font-size: 1.4rem;
+      text-align: left;
+    }
+}
+
+.projects {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  .col-xs-6 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Contact Section ***********/
+
+#contact {
+    @include sectionStyle('../images/bridgefog1400.jpg',70vh,$alt-text,rgba(0,0,0,0.7));
 }

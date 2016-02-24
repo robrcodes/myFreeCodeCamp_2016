@@ -11,6 +11,7 @@ body {
   color: #f6f6f6;
 }
 
+/* Home Section ***********/
 #home {
   padding: 40px 15px;
   text-shadow: 3px 3px 10px rgba(60, 60, 60, 0.7);
@@ -25,9 +26,16 @@ body {
 
 #home h1 {
   margin-top: 90px;
-  font-size: 6em;
+  font-size: 4rem;
   font-weight: 800;
   color: #f6f6f6;
+}
+
+/* Increase H1 Title on larger screens */
+@media (min-width: 758px) {
+  #home h1 {
+    font-size: 6rem;
+  }
 }
 
 .tagline {
@@ -38,6 +46,21 @@ body {
   color: #f6f6f6;
 }
 
+.social-buttons {
+  display: inline-block;
+}
+
+.social-buttons a {
+  margin: 1.25em 1.25em;
+  background-color: #195b90;
+  color: #f6f6f6;
+}
+
+.social-buttons span {
+  padding-left: 10px;
+}
+
+/* About Section ***********/
 #about {
   padding: 40px 15px;
   text-shadow: 3px 3px 10px rgba(246, 246, 246, 0.7);
@@ -50,6 +73,11 @@ body {
   padding-bottom: 20px;
 }
 
+#about img {
+  max-width: 35%;
+  margin: 0.5rem;
+}
+
 #about h1 {
   text-align: left;
 }
@@ -59,6 +87,15 @@ body {
   text-align: left;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 758px) {
+  #about img {
+    max-width: 20%;
+    margin: 1rem;
+  }
+}
+
+/* Portfolio Section ***********/
 #portfolio {
   padding: 40px 15px;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
@@ -81,9 +118,15 @@ body {
 }
 
 .projects {
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
+.projects .col-xs-6 {
+  margin-bottom: 1.5rem;
+}
+
+/* Contact Section ***********/
 #contact {
   padding: 40px 15px;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
@@ -94,20 +137,6 @@ body {
   min-height: 70vh;
   padding-top: 70px;
   padding-bottom: 20px;
-}
-
-.social-buttons {
-  display: inline-block;
-}
-
-.social-buttons a {
-  margin: 1.25em 1.25em;
-  background-color: #195b90;
-  color: #f6f6f6;
-}
-
-.social-buttons span {
-  padding-left: 10px;
 }
 
 /*# sourceMappingURL=maps/main.css.map */
