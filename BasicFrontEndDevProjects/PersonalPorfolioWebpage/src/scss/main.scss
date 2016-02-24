@@ -135,3 +135,9 @@ body {
 #contact {
     @include sectionStyle('../images/bridgefog1400.jpg',70vh,$alt-text,rgba(0,0,0,0.7));
 }
+
+.modal {
+  margin-top: 20vh;
+  color: $main-text;
+  text-shadow: none;
+}
