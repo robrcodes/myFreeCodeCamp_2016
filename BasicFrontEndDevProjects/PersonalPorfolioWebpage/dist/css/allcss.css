@@ -137,7 +137,7 @@ body {
 /* Contact Section ***********/
 #contact {
   padding: 40px 15px;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 10px rgba(60, 60, 60, 0.7);
   text-align: center;
   color: #f6f6f6;
   background: url("../images/bridgefog1400.jpg") no-repeat center center fixed;
@@ -147,8 +147,53 @@ body {
   padding-bottom: 20px;
 }
 
+#contact h1 {
+  text-align: left;
+}
+
+#contact p {
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
 .modal {
   margin-top: 20vh;
   color: #3c3c3c;
   text-shadow: none;
+}
+
+.social-bg {
+  background-color: rgba(246, 246, 246, 0.5);
+  border-radius: 5px;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.social-bg button {
+  margin: 24px 0;
+  margin: 1.5rem 0;
+}
+
+.social-links li {
+  list-style-type: none;
+  text-align: left;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.social-links a {
+  color: #000000;
+  text-shadow: 3px 3px 10px rgba(246, 246, 246, 0.7);
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 758px) {
+  .social-links li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 2.5rem;
+  }
 }
