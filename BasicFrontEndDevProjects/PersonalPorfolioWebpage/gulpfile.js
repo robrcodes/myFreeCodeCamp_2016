@@ -8,6 +8,7 @@ var uglifycss = require('gulp-uglifycss');
 var notify = require('gulp-notify');
 var autoprefixer = require('gulp-autoprefixer');
 var pixrem = require('gulp-pixrem');
+var plumber = require('gulp-plumber');
 var picshrink = require('gulp-imagemin');
 
 var sassOptions = {
@@ -39,7 +40,7 @@ gulp.task('allcss', function() {
   console.log('Gulp is running allcss task...');
   return gulp.src(paths.css)
   .pipe(concat('allcss.css'))
-  .pipe(pixrem())
+  .pipe(pixrem({ rootValue: '10px' }))
   .pipe(gulp.dest('./dist/css/'));
 });
 
@@ -47,14 +48,12 @@ gulp.task('mincss', function() {
   return gulp.src(paths.css)
     .pipe(concat('allcss.min.css'))
     .pipe(uglifycss({
-      "max-line-len": 80
-    }))
+      "max-line-len": 80 }))
     .pipe(gulp.dest('./dist/css/'));
 });
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['doSass'], function() {
-
     browserSync.init({
         server: "./"
     });
@@ -71,12 +70,15 @@ gulp.task('serve', ['doSass'], function() {
 gulp.task('doSass', function() {
   console.log('Gulp is running doSass task...');
   return gulp.src(paths.sass)
+      .pipe(plumber())
       .pipe(sourcemaps.init())
       .pipe(sass(sassOptions).on('error', notify.onError(function (error) {
 return "Problem file : " + error.message;
 })))
       .pipe(autoprefixer(autoprefixerOptions))
       .pipe(sourcemaps.write('./maps'))
+      .pipe(pixrem({ rootValue: '10px' }))
+      .pipe(plumber.stop())
       .pipe(gulp.dest('./src/css/'))
       .pipe(browserSync.stream());
 });
