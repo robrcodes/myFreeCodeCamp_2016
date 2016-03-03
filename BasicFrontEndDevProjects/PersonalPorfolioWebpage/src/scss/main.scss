@@ -14,7 +14,6 @@ $fig-bg: #393939;
 $font-main: Raleway,sans-serif;
 
 // Sass Mixin definitions:
-
 @mixin sectionStyle($bgurl,$bgheight,$textcolor,$shadcolor){
   padding: 40px 15px;
   text-shadow: 3px 3px 10px $shadcolor;
@@ -50,7 +49,7 @@ body {
 
 #home h1 {
   margin-top: 90px;
-  font-size: 4rem;
+  font-size: 6.4rem;
   font-weight: 800;
   color: $alt-text;
 }
@@ -58,7 +57,7 @@ body {
 /* Increase H1 Title on larger screens */
 @media (min-width: 758px) {
   #home h1 {
-    font-size: 6rem;
+    font-size: 9.4rem;
   }
 }
 

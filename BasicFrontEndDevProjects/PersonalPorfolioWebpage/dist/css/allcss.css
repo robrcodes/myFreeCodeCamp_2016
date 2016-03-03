@@ -2,18 +2,11 @@
 **************/
 html {
   font-size: 10px;
-<<<<<<< HEAD
-  font-size: 16px;
-  font-size: 16px;
-  font-size: 1rem;
-=======
->>>>>>> hover-events
 }
 
 body {
   padding-top: 50px;
   font-family: Raleway, sans-serif;
-  font-size: 16px;
   font-size: 16px;
   font-size: 1.6rem;
   color: #f6f6f6;
@@ -34,14 +27,8 @@ body {
 
 #home h1 {
   margin-top: 90px;
-<<<<<<< HEAD
   font-size: 64px;
-  font-size: 64px;
-=======
-  font-size: 40px;
-  font-size: 40px;
->>>>>>> hover-events
-  font-size: 4rem;
+  font-size: 6.4rem;
   font-weight: 800;
   color: #f6f6f6;
 }
@@ -49,7 +36,7 @@ body {
 /* Increase H1 Title on larger screens */
 @media (min-width: 758px) {
   #home h1 {
-    font-size: 6rem;
+    font-size: 9.4rem;
   }
 }
 
@@ -90,13 +77,7 @@ body {
 
 #about img {
   max-width: 35%;
-<<<<<<< HEAD
-  margin: 8px;
-  margin: 8px;
-=======
   margin: 5px;
-  margin: 5px;
->>>>>>> hover-events
   margin: 0.5rem;
 }
 
@@ -105,15 +86,8 @@ body {
 }
 
 #about p {
-<<<<<<< HEAD
-  font-size: 25.6px;
-  font-size: 25.6px;
-  font-size: 1.6rem;
-=======
-  font-size: 25px;
   font-size: 25px;
   font-size: 2.5rem;
->>>>>>> hover-events
   text-align: left;
 }
 
@@ -143,43 +117,20 @@ body {
 }
 
 #portfolio p {
-<<<<<<< HEAD
-  font-size: 22.4px;
-  font-size: 22.4px;
-  font-size: 1.4rem;
-=======
-  font-size: 22px;
   font-size: 22px;
   font-size: 2.2rem;
->>>>>>> hover-events
   text-align: left;
 }
 
 .projects {
-<<<<<<< HEAD
-  margin-top: 24px;
-  margin-top: 24px;
-  margin-top: 1.5rem;
-  margin-bottom: 24px;
-  margin-bottom: 24px;
-=======
-  margin-top: 15px;
   margin-top: 15px;
   margin-top: 1.5rem;
   margin-bottom: 15px;
-  margin-bottom: 15px;
->>>>>>> hover-events
   margin-bottom: 1.5rem;
 }
 
 .projects .col-xs-6 {
-<<<<<<< HEAD
-  margin-bottom: 24px;
-  margin-bottom: 24px;
-=======
   margin-bottom: 15px;
-  margin-bottom: 15px;
->>>>>>> hover-events
   margin-bottom: 1.5rem;
 }
 
@@ -201,15 +152,8 @@ body {
 }
 
 #contact p {
-<<<<<<< HEAD
-  font-size: 22.4px;
-  font-size: 22.4px;
-  font-size: 1.4rem;
-=======
-  font-size: 22px;
   font-size: 22px;
   font-size: 2.2rem;
->>>>>>> hover-events
   text-align: left;
 }
 
@@ -222,30 +166,14 @@ body {
 .social-bg {
   background-color: rgba(246, 246, 246, 0.5);
   border-radius: 5px;
-<<<<<<< HEAD
-  padding-top: 24px;
-  padding-top: 24px;
-  padding-top: 1.5rem;
-  margin-bottom: 24px;
-  margin-bottom: 24px;
-=======
-  padding-top: 15px;
   padding-top: 15px;
   padding-top: 1.5rem;
   margin-bottom: 15px;
-  margin-bottom: 15px;
->>>>>>> hover-events
   margin-bottom: 1.5rem;
 }
 
 .social-bg button {
-<<<<<<< HEAD
-  margin: 24px 0;
-  margin: 24px 0;
-=======
   margin: 15px 0;
-  margin: 15px 0;
->>>>>>> hover-events
   margin: 1.5rem 0;
 }
 
@@ -253,12 +181,7 @@ body {
   list-style-type: none;
   text-align: left;
   font-size: 24px;
-  font-size: 24px;
-<<<<<<< HEAD
-  font-size: 1.5rem;
-=======
   font-size: 2.4rem;
->>>>>>> hover-events
 }
 
 .social-links a {
@@ -296,7 +219,6 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-transform: scale(1);
   transform: scale(1);
-  padding: 20px;
   padding: 20px;
   padding: 2rem;
 }

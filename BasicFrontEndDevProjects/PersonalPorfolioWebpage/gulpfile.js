@@ -1,4 +1,3 @@
-
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
@@ -40,7 +39,6 @@ gulp.task('allcss', function() {
   console.log('Gulp is running allcss task...');
   return gulp.src(paths.css)
   .pipe(concat('allcss.css'))
-  .pipe(pixrem({ rootValue: '10px' }))
   .pipe(gulp.dest('./dist/css/'));
 });
 
@@ -81,6 +79,7 @@ return "Problem file : " + error.message;
       .pipe(plumber.stop())
       .pipe(gulp.dest('./src/css/'))
       .pipe(browserSync.stream());
+      console.log('Gulp is finished doSass task...');
 });
 
 //optimise images
