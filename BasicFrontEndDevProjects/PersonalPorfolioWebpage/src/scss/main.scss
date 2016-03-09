@@ -1,4 +1,4 @@
-// Sass Variable definitions:
+// Sass Variable definitions ***********/
 
 $nav-bg: #3c3c3c;
 $nav-text: #ffffff;
@@ -13,16 +13,17 @@ $fig-text: #030303;
 $fig-bg: #393939;
 $font-main: Raleway,sans-serif;
 
-// Sass Mixin definitions:
+// Sass Mixin definitions ***********/
+
+// Default styling for main sections
 @mixin sectionStyle($bgurl,$bgheight,$textcolor,$shadcolor){
   padding: 40px 15px;
   text-shadow: 3px 3px 10px $shadcolor;
   text-align: center;
   color: $textcolor;
   background: url($bgurl) no-repeat center center fixed;
-  // '../images/codescreen1400.jpeg'
   background-size: cover;
-  min-height: $bgheight;  //100vh
+  min-height: $bgheight;
   padding-top: 70px; padding-bottom: 20px;
 }
 
@@ -86,7 +87,7 @@ body {
 
 #about {
     @include sectionStyle('../images/dodgecoronet1400w.jpg',60vh,$main-text,rgba($main-bg,0.7));
-    //@include sectionStyle('',70vh);
+
     img {
       max-width: 35%;
       margin: 0.5rem;
@@ -95,7 +96,6 @@ body {
       text-align: left;
     }
     p {
-      // color: $main-text;
       font-size: 2.5rem;
       text-align: left;
     }
@@ -117,7 +117,6 @@ body {
       text-align: left;
     }
     p {
-      // color: $main-text;
       font-size: 2.2rem;
       text-align: left;
     }
@@ -130,6 +129,95 @@ body {
     margin-bottom: 1.5rem;
   }
 }
+
+.single-effect {
+  margin-bottom: 3rem;
+}
+
+/* Hover Portfolio Elements ****************/
+
+.port-element {
+background-color: rbga(0,0,0,0);
+display: block;
+overflow: hidden;
+position: relative;
+transition: all 0.5s;
+}
+.port-element img {
+max-width: 100%;
+transition: all 0.5s;
+}
+.port-element:hover .view-caption {
+max-width: 400px;
+margin: 0 auto;
+opacity: 1;
+background-color: rgba(darken($alt-bg, 40%), 0.8);
+transform: scale(1);
+padding: 2rem;
+}
+.port-element:hover .view-caption:hover h4 {
+transform: scale(1);
+}
+.port-element:hover .view-caption:hover a {
+transform: scale(1);
+}
+.port-element .view-caption {
+background-color: rgba(0, 0, 0, 0);
+transition: all 0.5s;
+padding: 20% 0;
+position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transform: scale(0.5);
+}
+.port-element .view-caption h4 {
+color: $alt-text;
+font-size: 1.8rem;
+font-weight: normal;
+margin-bottom: 15px;
+margin-top: 5px;
+transition: all 0.5s;
+transform: scale(0.4);
+}
+.port-element .view-caption a {
+color: $alt-text;
+font-size: 1.8rem;
+margin-top: 14%;
+display: inline-block;
+border: 2px solid $alt-text;
+padding: 10px 15px;
+line-height: 18px;
+border-radius: 4px;
+transition: all 0.5s;
+transform: scale(0.4);
+}
+
+/* Larger Screens (991px and up) */
+@media (min-width: 991px) {
+  .port-element .view-caption a {
+  margin-top: 4%;
+  }
+}
+
+.port-element .view-caption ul {
+list-style: circle;
+li {
+text-align: left;
+}
+}
+
+.port-element .view-caption a:hover {
+color: lighten($impact,30%);
+border-color: lighten($impact,30%);
+}
+/* hover end */
+
+
 
 /* Contact Section ***********/
 
@@ -145,11 +233,7 @@ body {
     }
 }
 
-.modal {
-  margin-top: 20vh;
-  color: $main-text;
-  text-shadow: none;
-}
+
 
 .social-bg {
   background-color: rgba($main-bg,0.5);
@@ -186,80 +270,17 @@ body {
   }
 }
 
-/* HOVER */
 
-.wpf-demo-6 {
-  background-color: #FFF;
-  display: block;
-  // width: 300px;
-  // height: 300px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.5s;
-}
-.wpf-demo-6 img {
-  // height: 100%;
-  // width: 100%;
-  max-width: 100%;
-  transition: all 0.5s;
-}
-.wpf-demo-6:hover .view-caption {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(1);
-  padding: 2rem;
-}
-.wpf-demo-6:hover .view-caption:hover h4 {
-  transform: scale(1);
-}
-.wpf-demo-6:hover .view-caption:hover a {
-  transform: scale(1);
-}
-.wpf-demo-6 .view-caption {
-  background-color: rgba(0, 0, 0, 0);
-  transition: all 0.5s;
-  padding: 20% 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transform: scale(0.5);
-}
-.wpf-demo-6 .view-caption h4 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  transition: all 0.5s;
-  transform: scale(0.4);
-}
-.wpf-demo-6 .view-caption a {
-  color: #fff;
-  font-size: 18px;
-  margin-top: 14%;
-  display: inline-block;
-  border: 2px solid #fff;
-  padding: 10px 15px;
-  line-height: 18px;
-  border-radius: 4px;
-  transition: all 0.5s;
-  transform: scale(0.4);
-}
+/* Modal Contact Form Section ***********/
 
-.wpf-demo-6 .view-caption ul {
-  list-style: circle;
-  li {
+.modal {
+  margin-top: 20vh;
+  color: $main-text;
+  text-shadow: none;
+  p {
+    // color: $main-text;
+    font-size: 1.2rem;
     text-align: left;
+    color: saturate($impact, 20%);
   }
 }
-
-.wpf-demo-6 .view-caption a:hover {
-  color: #D24D57;
-  border-color: #D24D57;
-}
-/* hover end */

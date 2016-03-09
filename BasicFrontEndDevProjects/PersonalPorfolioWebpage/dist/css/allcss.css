@@ -134,6 +134,115 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.single-effect {
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
+}
+
+/* Hover Portfolio Elements ****************/
+.port-element {
+  background-color: rbga(0, 0, 0, 0);
+  display: block;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.port-element img {
+  max-width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.port-element:hover .view-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  padding: 20px;
+  padding: 2rem;
+}
+
+.port-element:hover .view-caption:hover h4 {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.port-element:hover .view-caption:hover a {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.port-element .view-caption {
+  background-color: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 20% 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.port-element .view-caption h4 {
+  color: #f6f6f6;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.port-element .view-caption a {
+  color: #f6f6f6;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-top: 14%;
+  display: inline-block;
+  border: 2px solid #f6f6f6;
+  padding: 10px 15px;
+  line-height: 18px;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+/* Larger Screens (991px and up) */
+@media (min-width: 991px) {
+  .port-element .view-caption a {
+    margin-top: 4%;
+  }
+}
+
+.port-element .view-caption ul {
+  list-style: circle;
+}
+
+.port-element .view-caption ul li {
+  text-align: left;
+}
+
+.port-element .view-caption a:hover {
+  color: #5fa8e3;
+  border-color: #5fa8e3;
+}
+
+/* hover end */
 /* Contact Section ***********/
 #contact {
   padding: 40px 15px;
@@ -155,12 +264,6 @@ body {
   font-size: 22px;
   font-size: 2.2rem;
   text-align: left;
-}
-
-.modal {
-  margin-top: 20vh;
-  color: #3c3c3c;
-  text-shadow: none;
 }
 
 .social-bg {
@@ -198,96 +301,16 @@ body {
   }
 }
 
-/* HOVER */
-.wpf-demo-6 {
-  background-color: #FFF;
-  display: block;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+/* Modal Contact Form Section ***********/
+.modal {
+  margin-top: 20vh;
+  color: #3c3c3c;
+  text-shadow: none;
 }
 
-.wpf-demo-6 img {
-  max-width: 100%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.wpf-demo-6:hover .view-caption {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  padding: 20px;
-  padding: 2rem;
-}
-
-.wpf-demo-6:hover .view-caption:hover h4 {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.wpf-demo-6:hover .view-caption:hover a {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.wpf-demo-6 .view-caption {
-  background-color: transparent;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  padding: 20% 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.wpf-demo-6 .view-caption h4 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: scale(0.4);
-  transform: scale(0.4);
-}
-
-.wpf-demo-6 .view-caption a {
-  color: #fff;
-  font-size: 18px;
-  margin-top: 14%;
-  display: inline-block;
-  border: 2px solid #fff;
-  padding: 10px 15px;
-  line-height: 18px;
-  border-radius: 4px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: scale(0.4);
-  transform: scale(0.4);
-}
-
-.wpf-demo-6 .view-caption ul {
-  list-style: circle;
-}
-
-.wpf-demo-6 .view-caption ul li {
+.modal p {
+  font-size: 12px;
+  font-size: 1.2rem;
   text-align: left;
+  color: #085da1;
 }
-
-.wpf-demo-6 .view-caption a:hover {
-  color: #D24D57;
-  border-color: #D24D57;
-}
-
-/* hover end */
