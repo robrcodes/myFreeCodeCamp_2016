@@ -314,3 +314,18 @@ body {
   text-align: left;
   color: #085da1;
 }
+
+/* Footer *******************************/
+footer {
+  background-color: #101010;
+  color: #195b90;
+  padding: 30px;
+  padding: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer span {
+  margin: 0 auto;
+  max-width: 40%;
+}

@@ -284,3 +284,18 @@ border-color: lighten($impact,30%);
     color: saturate($impact, 20%);
   }
 }
+
+
+/* Footer *******************************/
+
+footer {
+  background-color: #101010;
+  color: $impact;
+  padding: 3rem;
+  margin: 0 auto;
+  text-align: center;
+  span {
+    margin: 0 auto;
+    max-width: 40%;
+  }
+}
