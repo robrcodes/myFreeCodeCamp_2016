@@ -31,8 +31,8 @@ var paths = {
 };
 
 // default task
-gulp.task('default', ['serve', 'doSass', 'allcss']);
-
+gulp.task('default', ['serve']);
+// gulp.task('default', ['serve', 'doSass', 'allcss']);
 // concatinate css to dist folder
 // this version not minified
 gulp.task('allcss', function() {
@@ -51,18 +51,12 @@ gulp.task('mincss', function() {
 });
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['doSass'], function() {
+gulp.task('serve', function() {
     browserSync.init({
         server: "./"
     });
-    // compile sass
-    gulp.watch('./src/scss/main.scss', ['doSass']);
-    gulp.watch('./src/scss/partials/*.scss', ['doSass']);
-    // concatenate css
-    gulp.watch('./src/css/main.css', ['allcss']);
-    // reload browser
+        // reload browser
     gulp.watch("./*.html").on('change', browserSync.reload);
-    gulp.watch("./dist/css/*.css").on('change', browserSync.reload);
 });
 
 gulp.task('doSass', function() {
