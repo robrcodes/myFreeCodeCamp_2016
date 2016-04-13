@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic Page Needs
-  ––––––––––––––––––––– -->
+  <!-- Basic Page Needs -->
   <meta charset="utf-8">
   <title>Simple Tribute Page</title>
   <meta name="description" content="This is a simple Tribute Page web page built for a Free Code Camp project, using Bootstrap with minimal other styles etc.">
   <meta name="author" content="Rob Renwick">
 
-  <!-- Mobile Specific Meta
-  ––––––––––––––––––––––––– -->
+  <!-- Mobile Specific Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <!-- Latest compiled and minified CSS -->
@@ -17,54 +15,46 @@
 
   <link href='https://fonts.googleapis.com/css?family=Julee|Abel' rel='stylesheet' type='text/css'>
 
+  <!-- CSS for Page -->
   <style>
-  .jumbotron {
-    text-align: center;
-  }
+    body {
+      font-family: Abel;
+      background-color: #dddddd;
+    }
 
-  body {
-    font-family: Abel;
-    background-color: #dddddd;
-  }
+    .jumbotron {
+      text-align: center;
+      background: url('https://www.dropbox.com/s/259b7hgl5z6ok0p/paperbg.jpg?raw=1') repeat;
+    }
 
-  .jumbotron {
-    background: url('https://www.dropbox.com/s/259b7hgl5z6ok0p/paperbg.jpg?raw=1') repeat;
+    .jumbotron h1 {
+      font-family: 'Julee';
+      font-style: italic;
+    }
 
-  }
-  .jumbotron h1 {
-    font-family: 'Julee';
-    /*font-size: 80px;*/
-    font-style: italic;
-  }
+    img {
+      padding: 7px;
+      margin: 20px 0;
+      border: 2px solid #000000;
+      background-color: #dddddd;
+    }
 
-  h2 {
-    /*font-family: 'Julee';*/
-  }
+    p {
+      font-size: 2em;
+    }
 
-  img {
-    padding: 7px;
-    margin: 20px 0;
-    border: 2px solid #000000;
-    background-color: #dddddd;
-  }
+    footer {
+      text-align: center;
+      background: url('https://www.dropbox.com/s/259b7hgl5z6ok0p/paperbg.jpg?raw=1') repeat;
+    }
 
-  p {
-    font-size: 2em;
-  }
-
-  footer {
-    text-align: center;
-    background: url('https://www.dropbox.com/s/259b7hgl5z6ok0p/paperbg.jpg?raw=1') repeat;
-  }
-
-  footer p {
-    padding: 20px 0;
-  }
-
+    footer p {
+      padding: 20px 0;
+    }
   </style>
-
 </head>
 
+<!-- Page Content -->
 <body>
     <div class="jumbotron">
       <div class="container">
@@ -73,67 +63,54 @@
           <h1 class="pull-left">&ldquo; Do nothing which is of no use &rdquo;</h1>
           <img class="img-rounded" src="https://www.dropbox.com/s/13fn2alsgh5q4qi/musashi.jpg?raw=1" alt="self portrait of Miyamoto Musashi">
         </div>
-      </div>
+      </div> <!-- ./row -->
       <h2 class="pull-right">- Miyamoto Musashi (1584 - 1645)</h2>
     </div>
-  </div>
+  </div> <!-- ./jumbotron -->
 
   <div class="container">
     <div class="row">
-
-
-    <p>
-      Legendary Japanese swordsman, Musashi, was a roaming samurai who won an exceptional 60 duels in his life. He was also known for being an excellent artist, sculptor, calligrapher, author, and founder of the two sword combat technique <em>niten'ichi</em>.
-    </p>
-    <p>
-      The above text, <em>Do nothing which is of no use</em> , is the English translation of a popular quote from possibly his best known book - <strong>The Book Of Five Rings</strong>
-    </p>
-  </div>
+      <div class="col-sm-10 col-sm-offset-1">
+        <p>
+          Legendary Japanese swordsman, Musashi, was a roaming samurai who won an exceptional 60 duels in his life. He was also known for being an excellent artist, sculptor, calligrapher, author, and founder of the two sword combat technique <em>niten'ichi</em>.
+        </p>
+        <p>
+          The above text, <em>Do nothing which is of no use</em> , is the English translation of a popular quote from one of his best known books - <strong>The Book Of Five Rings</strong>
+        </p>
+        <p>The following is a timeline showing some of the most notable events in his life:</p>
+      </div>
+    </div> <!-- ./row -->
 
     <div class="row">
-
-    <p>The following is a timeline showing some of the most notable events in his life:</p>
-    <ul>
-      <li><strong>1584</strong>, Musashi is born.</li>
-      <li><strong>1591</strong>, Musashi is taken and raised by his uncles after death of his father.</li>
-      <li><strong>1596</strong>, His first duel win, and kill.</li>
-      <li><strong>1604</strong>, He famously battles the house of Yoshioka in Kyoto. Exact details vary as to the number of combatants he bested.</li>
-      <li><strong>1607-12</strong>, Travels and defeats several experts in duels.</li>
-      <li><strong>1612</strong>, Runs a fencing school for a short period.</li>
-      <li><strong>1614-15</strong>, fought with Tokugawa Ieyasu's troops in the campaigns at Osaka Castle.</li>
-      <li><strong>1615-21</strong>, worked as a construction supervisor for Ogasawara Tadanao in Harima Province.</li>
-      <li><strong>1623</strong>, travels to Edo and adopts a second son Iori</li>
-      <li><strong>1626</strong>, first adopted son, Mikinosuke, commits seppuku (ritual suicide).</li>
-      <li><strong></strong></li>
-      <li><strong></strong></li>
-      <li><strong></strong></li>
-      <li><strong></strong></li>
-      <li><strong></strong></li>
-      <li><strong></strong></li>
-      <li><strong></strong></li>
-
-    </ul>
-
-    <table class="table">
-
-
-    </table>
-
-  </div>
-
-
+      <div class="col-sm-8 col-sm-offset-2">
+        <ul>
+          <li><strong>1584</strong>, Musashi is born.</li>
+          <li><strong>1591</strong>, Musashi is taken and raised by his uncles after death of his father.</li>
+          <li><strong>1596</strong>, His first duel win, and kill.</li>
+          <li><strong>1604</strong>, He famously battles the house of Yoshioka in Kyoto. Exact details vary as to the number of combatants he bested.</li>
+          <li><strong>1607-12</strong>, Travels and defeats several experts in duels.</li>
+          <li><strong>1612</strong>, Runs a fencing school for a short period.</li>
+          <li><strong>1614-15</strong>, fought with Tokugawa Ieyasu's troops in the campaigns at Osaka Castle.</li>
+          <li><strong>1615-21</strong>, worked as a construction supervisor for Ogasawara Tadanao in Harima Province.</li>
+          <li><strong>1623</strong>, travels to Edo and adopts a second son Iori</li>
+          <li><strong>1626</strong>, first adopted son, Mikinosuke, commits seppuku (ritual suicide).</li>
+          <li><strong></strong></li>
+          <li><strong></strong></li>
+          <li><strong></strong></li>
+          <li><strong></strong></li>
+          <li><strong></strong></li>
+          <li><strong></strong></li>
+          <li><strong></strong></li>
+        </ul>
+      </div>
+    </div> <!-- ./row -->
   </div> <!-- ./container -->
 
   <footer>
-    <div class="container">
-      <p>Coded by Rob Renwick (LifeCodeRob) 2016</p>
-
-    </div>
+    <p>Coded by Rob Renwick (LifeCodeRob) 2016</p>
   </footer>
 
-
-
-  <!-- Latest compiled and minified JavaScript -->
+  <!-- JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
